@@ -1,50 +1,59 @@
-# Welcome to your Expo app 👋
+# Gym Payment Application
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A React Native Expo application for handling gym membership payments and subscriptions.
 
-## Get started
+## Features
 
-1. Install dependencies
+- View different gym membership plans
+- Interactive payment processing
+- Secure card information storage
+- Payment status verification
+- Responsive design
+- Real-time card information preview
 
-   ```bash
-   npm install
-   ```
+## Technologies Used
 
-2. Start the app
+- React Native
+- Expo Router for navigation
+- Expo SecureStore for data persistence
+- React Context for state management
+- React Native Picker
 
-   ```bash
-    npx expo start
-   ```
+## Installation
 
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
+1. Clone the repository
 ```bash
-npm run reset-project
+git clone [your-repo-url]
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+2. Install dependencies
+```bash
+npm install
+```
 
-## Learn more
+3. Start the development server
+```bash
+npx expo start
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+## Usage
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+The app consists of several screens:
 
-## Join the community
+1. **Home Screen**: Displays available gym plans
+2. **Plan Details**: Shows detailed information about selected plan
+3. **Payment Screen**: Card information input with live preview
+4. **Payment Confirmation**: Review payment details
+5. **Payment Status**: Shows success/failure of transaction
 
-Join our community of developers creating universal apps.
+## Security
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+- Card information is stored securely using Expo SecureStore
+- No sensitive data is stored in plain text
+- Card numbers are masked for display
+
+## Contributing
+
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+
